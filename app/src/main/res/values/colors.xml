@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="LoadBG">#5F4D9F</color>
+    <color name="MainBG">#7C59B5</color>
+    <color name="ButReg">#A987F0</color>
+    <color name="ButGreen">#64C1AB</color>
+    <color name="Entry">#402B7B</color>
+    <color name="RepassBlue">#7CA6F6</color>
+    <color name="PassRe">#1DE9B6</color>
+    <color name="ForgetBG">#25133B</color>
+    <color name="Recovery">#90CAF9</color>
+
+
+</resources>

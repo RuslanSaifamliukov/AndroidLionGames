@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ForgetBG"
+    tools:context=".Recovery">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="103dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints,ScrollViewSize">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/recoverylogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="358dp"
+                android:layout_height="73dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:text="Пожалуйста, введите логин или эл. почту, на которые был зарегистрирован аккаунт"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/EditText"
+                android:layout_width="353dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textlogin"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="10dp"
+                android:paddingStart="30dp"
+                android:hint="Логин или email"
+                android:textColorHint="@color/Entry"
+                android:inputType="textEmailAddress"
+                android:textAllCaps="false"
+                android:textColor="@color/Entry"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="175dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonentry"
+                android:text="Отправить"
+                android:textAllCaps="false"
+                android:textColor="@color/Entry"
+                android:textSize="16sp"
+                android:onClick="recoveryok"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditText"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="241dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Вернуться"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:onClick="back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3"
+                tools:ignore="HardcodedText" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
